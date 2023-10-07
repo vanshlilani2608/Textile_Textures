@@ -1,0 +1,80 @@
+
+{% extends "index.html" %}
+
+{% block content %}
+<header>
+    <!-- <h1>Textile Treasures</h1>
+    <h3>Global Textile Treasures Awaits You</h3> -->
+    <img src="../static/img/logo_1-removebg-preview.png" aria-readonly="true"  alt="">
+    
+    
+</header>
+<!-- <div class="nav">
+    <nav class="nav-bar">
+        <a class="nav-1 Border" href="phy.html">Physicality</a>
+        <a class="nav-2 Border" href="socio.html">Socio-Economic</a>
+        <a class="nav-3 Border" href="bio.html">Bio-Diversity</a>
+        <a class="nav-4 Border" href="gov.html">Governance</a>
+        <a class="nav-5 Border" href="usp.html">USP's</a>/
+        <a class="nav-6 Border" href="about.html">About Us</a>
+    </nav>
+</div> -->
+<div class="container">
+    <!-- <h2>Welcome</h2>
+    <h2>To the World of Textile</h2> -->
+    <div class="login">
+    
+        <div class="form">
+            <h1>Welcome !</h1>
+            {% csrf_token %}
+            <form action="decision" method="get">  
+                <div class="switch-container">
+                    <label class="switch">
+                        <input type="checkbox" name="switch" id="switch-checkbox">
+                        <div class="slider"></div>
+                    </label>
+                    <!-- <span class="status">Buyer</span> -->
+                </div>
+
+                <div class="input">
+                    <input id="input" type="text" name= 'name' placeholder="Enter Your Name" required >
+                    <input id="input" type="email" name= 'email' placeholder="Please provide your Email" required >
+                    <!-- <label for="mobileNumber">Mobile Number:</label> -->
+                    <input type="tel" id="mobileNumber" name="number" placeholder="Enter your mobile number" required>
+                    <span id="mobileError"></span>
+                    <!-- <button type="submit">Submit</button> -->
+                </div>
+                
+               
+               <!-- <input type="submit"><button type="submit" class="buttons">Login</button> -->
+                <div id="buttonhouse">
+                    <div class="button">
+                        
+                        <button  type="submit" class="buttons" >Sign-up</button>
+                    </div>
+                </div>
+            </form>
+               
+        </div>
+
+    <!-- <div class="buyer">
+        <h3>Buyer 2</h3>
+        <p>Address: XYZ Street</p>
+        <p>Contact: buyer2@example.com</p>
+    </div>
+
+    <h2>Sellers</h2>
+    <div class="buyer seller">
+        <h3>Seller 1</h3>
+        <p>Address: PQR Street</p>
+        <p>Contact: seller1@example.com</p>
+    </div>
+    <div class="buyer seller">
+        <h3>Seller 2</h3>
+        <p>Address: LMN Street</p>
+        <p>Contact: seller2@example.com</p>
+    </div> -->
+</div>
+
+<script src="../static/script.js"></script>
+{% endblock %}

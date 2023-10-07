@@ -1,0 +1,328 @@
+/* Basic styles - customize as needed */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+
+    background-color: #d0cdd7;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    /* height: 100%; */
+    text-align: center;
+}
+header img{
+    height:100%;
+
+    font-size: 10rem ;
+}
+@font-face {
+    font-family: vatsal;
+    src: url(TEXT/Nexa-Heavy.ttf);
+}
+@font-face {
+    font-family: candy;
+    src: url(TEXT/Smile\ Candy.ttf);
+}
+header h1,header h3{
+    /* color: ; */
+    /* background-color: #F8F4E3; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    /* padding: 20px; */
+}
+.form h1{
+    color: whitesmoke;
+    opacity: 1;
+    z-index: 1;
+    text-shadow: 0px 0px 20px black;
+}
+.switch-container {
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    
+    height: 40px;
+    position: relative;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 160px;
+    background-color: #000000;
+    border-radius: 40px;
+    transition: 0.3s;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slider:before {
+    content: "Buyer";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: white;
+    font-weight: bold;
+}
+
+input:checked + .slider {
+    background-color:#6C231C;
+    color: black;
+}
+
+input:checked + .slider:before {
+    content: "Seller";
+    left: 90px;
+}
+.form{
+    height: 80vh;
+    /* width: 35%; */
+    border: 5px solid rgba(255, 255, 255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 50px black;
+    border-radius: 5rem;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* top: 20px; */
+  
+}
+.form h1{
+    position:relative;
+    top: -20px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    /* margin: 20px; */
+    background: none;
+    position: relative;
+    /* top: -40px; */
+
+}
+.input input{
+    margin: 20px;
+    font-family: vatsal;
+
+    height: 4vh;
+    width: 400px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+
+}
+#mobileError{
+    color: #000000;
+    font-family: vatsal;
+    margin-bottom:10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center
+    ;
+}
+.input input:focus{
+    outline: none;
+    
+}
+.input 
+.Border{
+    /* width: 10%; */
+    height: 4vh;
+    display: flex;
+    font-size: 1rem;
+    font-family: bold;
+    justify-content: center;
+    align-items: center;
+  }
+
+.nav{
+    position: sticky;
+    z-index: 1;
+    top: 10px;
+    display: flex;
+    height: 12vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* left: 2%; */
+    /* padding-top: 10px; */
+    position: sticky;
+    background-color: white;
+    width: 100%;
+    border-radius: 5rem;
+}
+
+.nav-bar{
+    width: 95%;
+    background-color: #706C61;
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    position: sticky;
+    align-items: center;
+    border-radius: 4rem;
+    justify-content: space-evenly;
+}
+.nav-bar a{
+    color: #F8F4E3;
+    text-decoration: none;
+    width: 17%;
+    font-size: 1.4rem;
+    font-family: vatsal;
+
+}
+/* .nav-bar a:hover{
+    /* width: 100%; */
+/* } */ */
+
+  .Border:hover{
+  
+    transition: 0.7s linear;
+    /* transform: scale(1.1); */
+    background-color: #FF8966;
+    border-radius: 4rem;
+    height: 100%;
+    /* width:; */
+    font-family: vatsal;
+  
+    box-shadow: 0px 0px 1px black;
+    color: #000000;
+  }
+h1 {
+    font-size: 36px;
+}
+.login img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: none;
+    width: 100%;
+
+}
+.button{
+    width: 500%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons{
+    width:50% ;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 15px;
+    font-family: candy;
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    z-index: 1;
+    overflow: hidden;
+    /* box-shadow: inset 0px 0px  20px #a2d2ff; */
+}
+.button a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170%;
+}
+.button button:hover{
+    box-shadow: 5px 5px 2px #000000;
+}
+#buttonhouse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.buttons::before{
+    content: "";
+    width: 0;
+    height:40px;
+    /* border-radius: 20px; */
+    background-image: linear-gradient( to right, #e29578 0%,#f77043 100%) ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s ease;
+    display: block;
+    color: lightgray;
+    z-index: -1;
+}
+.buttons:hover::before{
+    width: 100%;
+}
+.buttons:hover{
+    /* color: orange; */
+    text-shadow: 4px 3px 3px white;
+    transform: scale(1.2);
+    transition: 1s linear;
+    -webkit-text-fill-color: black;
+    box-shadow : 0px 0px 30px black;
+}
+
+#background{
+    height: 80vh;
+    width: 40%;
+    /* filter: blur(2px); */
+}
+
+/* Add your CSS styles and animations here */
+.login{
+    background-image:url(img/bg-2.jpg);
+    background-size: cover;
+    height: 100vh;
+    z-index: 0;
+    width: 100%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.login:hover, .seller:hover {
+    transform: scale(1.05);
+}
